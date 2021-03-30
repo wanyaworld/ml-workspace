@@ -5,6 +5,7 @@ epochs = 2000
 
 a = torch.tensor((3.0), requires_grad = True)
 
+# learnable parameters (weights)
 w1 = torch.tensor((1.0), requires_grad = True)
 w2 = torch.tensor((1.0), requires_grad = True)
 w3 = torch.tensor((1.0), requires_grad = True)
