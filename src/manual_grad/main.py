@@ -24,13 +24,14 @@ for t in range(epochs):
 
   L.backward()
 
-  # We manually update grad, so disable auto grad
+  # We manually update grad, so disable auto grad.
   with torch.no_grad():
     w1 -= lr * w1.grad;
     w2 -= lr * w2.grad;
     w3 -= lr * w3.grad;
     w4 -= lr * w4.grad;
 
+  # Since pytorch accumulates grads, zero them.
     w1.grad = None
     w2.grad = None
     w3.grad = None
