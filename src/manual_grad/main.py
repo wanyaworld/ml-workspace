@@ -3,7 +3,7 @@ import torch
 lr = 1e-5
 epochs = 2000
 
-a = torch.tensor((3.0), requires_grad = True)
+a = torch.tensor((3.0))
 
 # learnable parameters (weights)
 w1 = torch.tensor((1.0), requires_grad = True)
